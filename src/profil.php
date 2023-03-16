@@ -17,7 +17,7 @@ VerifAuth();
 <body>
      <?php include("incl/header.php"); ?>
 
-     <main class="px-8 h-[200px]">
+     <main class="px-8 ">
         <section class="mb-[3rem] mt-[3rem]">
             <div class="">
                 <h1 class="text-4xl font-semibold pl-[9rem] ">Profil </h1>
@@ -29,7 +29,7 @@ VerifAuth();
         
      </main>
 
-     <?php #include("incl/footer.php"); ?>
+     <?php include("incl/footer.php"); ?>
 
 
     

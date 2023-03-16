@@ -16,12 +16,14 @@ VerifAuth();
 <body>
      <?php include("incl/header.php"); ?>
 
-     <main class="px-8 h-[200px]">
-         <section class="mb-3">
-            <div class="space-y-5">
-                <h1 class="text-3xl font-semibold underline">Messagerie </h1>
+     <main class="px-8">
+        <section class="mb-[3rem] mt-[3rem]">
+            <div class="">
+                <h1 class="text-4xl font-semibold pl-[9rem] ">Ma messagerie </h1>
             </div>
          </section>
+
+         <?php include("incl/tab_message.php"); ?>
 
         
      </main>

@@ -40,7 +40,7 @@
                     
                     ?>
 
-                    <div class="bg-slate-100 rounded shadow-md absolute -right-[6.8rem] -top-[1.5rem] px-3 py-3 option_modale">
+                    <div class="bg-slate-100 rounded shadow-md absolute -right-[6.8rem] -top-[3rem] px-3 py-3 option_modale">
                         <ul class="text-sm space-y-2">
                             
                             <?php
@@ -54,6 +54,10 @@
                             <hr>
                             <li>
                                 <a href="#" class="text-slate-800 font-semibold hover:text-red-500 transition ease-linear duration-150">Télécharger le RIB</a>
+                            </li>
+                            <hr>
+                            <li>
+                                <a href="#" class="text-slate-800 font-semibold hover:text-red-500 transition ease-linear duration-150">Détails de solde</a>
                             </li>
                         </ul>
                     </div>
