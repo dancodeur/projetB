@@ -1,4 +1,4 @@
-<header class="px-8 py-4 mb-3 bg-slate-800 items-center">
+<header class="px-8 py-4 mb-3 bg-slate-800 items-center ">
     <nav class="grid grid-cols-9">
         <div class="col-span-1">
               <a href="index.php">
@@ -10,11 +10,11 @@
                  
                  <ul class="md:flex pt-[0.7rem] md:space-x-3 ml-3 text-slate-50">
                     <li>
-                        <a href="Comptes.php" class="transition ease-linear duration-150 hover:text-yellow-200">Mes Comptes</a>
+                        <a href="Comptes.php" class="transition ease-linear duration-150 hover:text-yellow-200">Comptes</a>
                     </li>
 
                     <li>
-                        <a href="budget.php" class="transition ease-linear duration-150 hover:text-yellow-200">Mon budget</a>
+                        <a href="budget.php" class="transition ease-linear duration-150 hover:text-yellow-200">Budget</a>
                     </li>
                  </ul>
             </div>
@@ -29,7 +29,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
                            </svg>
                         Notifications</a>
-                        <span class="w-4 h-4 text-center rounded-full bg-red-500 text-white text-xs absolute -top-[0.50rem] right-[1.8rem]">6</span>
+                        <span class="w-4 h-4 text-center rounded-full bg-red-500 text-white text-xs absolute -top-[0.50rem] right-[1.8rem]">2</span>
                     </li>
                     <li class="relative border-l-2 group">
                         <a href="messagerie.php" class="flex flex-col items-center text-slate-50 pl-1 group-hover:text-yellow-200">
@@ -40,7 +40,16 @@
 
                             Messagerie
                         </a>
-                        <span class="w-4 h-4 text-center rounded-full bg-red-500 text-white text-xs absolute -top-[0.50rem] right-[1.5rem]">6</span>
+                        <span class="w-4 h-4 text-center rounded-full bg-red-500 text-white text-xs absolute -top-[0.50rem] right-[1.5rem]">
+                            <?php 
+                               if(isset($_SESSION["id"])){
+                                //$nbr_msg=Nbre_message($_SESSION["id"]);
+                                echo "2";
+                               }else{
+                                echo "0";
+                               }
+                            ?>
+                        </span>
                     </li>
 
                     <li class=" border-l-2 group">
@@ -69,7 +78,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75" />
                           </svg>
     
-                        déconnexion</a>
+                        Déconnexion</a>
                     </li>
                 </ul>
 

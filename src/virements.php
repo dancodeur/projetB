@@ -11,14 +11,15 @@ VerifAuth();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virements</title>
     <link href="../dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
      <?php include("incl/header.php"); ?>
 
-     <main class="px-8">
+     <main class="px-8 h-[560px]">
          <section class="mb-[3rem] mt-[3rem]">
             <div class="">
-                <h1 class="text-4xl font-semibold pl-[9rem] ">Mes virements </h1>
+                <h1 class="text-xl font-semibold pl-[9rem]  ">Comptes/ Virement/ </h1>
             </div>
          </section>
 

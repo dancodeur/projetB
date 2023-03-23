@@ -2,7 +2,7 @@
 
 function GEN_IBAM_RIB(){
 
-    $i="FR78";
+    $i="FR00";
     $i1=rand(1000,9999);
     $i2=rand(1000,9999);
     $i3=rand(1000,9999);

@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{html,js,php}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'inter':['Inter'], 
+      }
+    },
   },
+  darkMode:['class'],
+  
   plugins: [],
 }

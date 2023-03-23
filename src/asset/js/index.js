@@ -2,7 +2,7 @@ $(function(){
    
     //toogle de la table compte...
     $("#toogle").click(function(){
-        $(".tab").slideToggle();
+        $(".tab").toggle();
     })
 
 
@@ -14,5 +14,9 @@ $(function(){
         $(".option_modale").toggle();
     })
 
+    //messagerie
+
+
+  
   
 });

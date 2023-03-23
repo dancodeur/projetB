@@ -1,8 +1,25 @@
-<div>
+<?php 
+
+$salaire=GET_MONTANT_REVENU("transfert_argent");
+$caf=GET_MONTANT_REVENU("vetement");
+$location=GET_MONTANT_REVENU("loyer");
+
+
+
+?>
+<div class="mb-3">
   <canvas id="revenus" ></canvas>
 </div>
 
+
 <script>
+
+let salaire="<?= $salaire?>";
+let CAF="<?= $caf ?>";
+let LOCATION="<?= $location?>";
+
+
+
   const ctx2 = document.getElementById('revenus');
 
   new Chart(ctx2, {
@@ -11,11 +28,11 @@
       labels: ['Salaire', 'CAF', 'Location'],
       datasets: [{
         label: 'Revenus',
-        data: [123, 78, 333],
+        data: [salaire, CAF, LOCATION],
         backgroundColor: [
-           'rgb(255, 99, 132)',
-           'rgb(54, 162, 235)',
-           'rgb(255, 205, 86)'
+           '#06B2E0',
+           '#1F5261',
+           '#AC28E0'
          ],
          hoverOffset: 4
       }]

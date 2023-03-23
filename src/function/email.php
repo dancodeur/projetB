@@ -22,3 +22,29 @@ function sendEmail($emailContributeur,$admin=false){
     }
     
 }
+
+function virementEmail($email,$objet,$content){
+    
+    $to=$email;
+    $objet=$objet;
+    $message=$content;
+
+    mail($to,$objet,$message);
+
+}
+
+function recupEmail($id){
+
+    if(is_int($id)){
+
+        include("function/db.php");
+
+        $recup_email=$db->prepare("SELECT client_email FROM client WHERE client_id=?");
+        $recup_email->execute(array($id));
+
+       $email=$recup_email->fetch()["client_email"];
+
+       return $email;
+
+    }
+}

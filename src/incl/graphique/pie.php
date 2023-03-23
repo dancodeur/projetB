@@ -1,23 +1,46 @@
-<div>
+<?php 
+
+$compte=GET_COMPTE_ID($_SESSION["id"]);
+$id=$compte->fetch()["compte_id"];
+
+
+$aliment=GET_MONTANT("alimentaire");
+$vetement=GET_MONTANT("vetement");
+$Loyer=GET_MONTANT("loyer");
+$transfert_arg=GET_MONTANT("transfert_argent");
+
+
+
+?>
+<div class="mb-3">
   <canvas id="depenses" ></canvas>
 </div>
 
 <script>
+
+  let aliment="<?=$aliment?>";
+  let vetement="<?=$vetement?>";
+  let loyer="<?=$Loyer?>";
+  let transfert_argent="<?=$transfert_arg?>";
+  
+
+
   const ctx = document.getElementById('depenses');
 
   new Chart(ctx, {
     type: 'pie',
     data: {
-      labels: ['Alimentaire', 'Vetement', 'Voiture', 'Autres'],
+      labels: ['Alimentaire', 'Vetement', 'Logement', 'Transfert d\'argent'],
       datasets: [{
         label: 'Dépenses',
-        data: [276, 199, 180, 600],
+        data: [aliment, vetement, loyer, transfert_argent],
         backgroundColor: [
-           'rgb(255, 99, 132)',
-           'rgb(54, 162, 235)',
-           'rgb(255, 205, 86)'
+           '#70E014',
+           '#E01802',
+           '#297FE1',
+           '#E1B20B'
          ],
-         hoverOffset: 4
+         hoverOffset: 5
       }]
     },
   });

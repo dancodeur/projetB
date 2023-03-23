@@ -11,7 +11,7 @@ function notification($id,$content="Welcome"){
 
         include("function/db.php");
 
-        $notif=$db->prepare("INSERT INTO notification(notification_client_id,notification_content,notification_time,notification_date) VALUES(?,?,?,?");
+        $notif=$db->prepare("INSERT INTO notification(notification_client_id,notification_content,notification_time,notification_date) VALUES(?,?,?,?)");
         $notif->execute(array($id_client,$content_notif,$time,$date));
 
         if($notif->rowCount()>0){

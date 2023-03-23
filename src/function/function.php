@@ -120,3 +120,29 @@ function SingleClientCompte($id){
     }
 }
 
+//Ajoute un bénéficiaire
+
+
+function Addbeneficiaire($compte_id,$id_client,$nom,$rib,$ibam){
+    
+    $compte=$compte_id;
+    $client=$id_client;
+    $nom=$nom;
+    $rib=$rib;
+    $ibam=$ibam;
+
+    $date=date("Y-m-d");
+    include("function/db.php");
+
+    $add=$db->prepare("INSERT INTO beneficiaire(benef_client_compte_id,benef_client_id,benef_nom,benef_rib,benef_ibam,benef_date) VALUES(?,?,?,?,?,?)");
+    $add->execute(array($compte,$client,$nom,$rib,$ibam,$date));
+
+    if($add->rowCount()>0){
+
+        return true;
+    }else{
+        return false;
+    }
+}
+
+
