@@ -9,7 +9,7 @@ function GEN_IBAM_RIB(){
     $i4=rand(1000,9999);
     $i5=rand(1000,9999);
     
-    $key_rib=rand(001,900);
+    $key_rib=rand(99,999);
     
     $IBAM=$i." ".$i1." ".$i2." ".$i3." ".$i4." ".$i5." ".$key_rib; #IBAM
     $RIB=$key_rib; #RIB

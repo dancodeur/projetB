@@ -41,21 +41,34 @@ function Auth($login,$pwd,$client=true){
             #Auth reservé au client...
         }else{
 
-            if(is_string($login) && is_int($pwd)){
+            if(is_int($login) && is_int($pwd)){
 
                 $client_code=$login;
                 $client_code_secret=$pwd;
 
                 include("function/db.php");
 
-                $auth=$db->prepare("SELECT client_code, client_code_secret FROM client WHERE client_code=? AND client_code_secret=?");
+                $auth=$db->prepare("SELECT client_id,client_code, client_code_secret FROM client WHERE client_code=? AND client_code_secret=?");
                 $auth->execute(arrary($client_code,$client_code_secret));
 
                 if($auth->rowCount()>0){
-                    return true; #Auth client successfull
+                    
+                    $id=$auth->fetch()['client_id'];
+
+                    $res=[
+                        'id'=>$id,
+                        'success'=>true
+                    ];
+                    
+                    return $res; #Auth client successfull : return  array
+
                 }else{
                     return false;
                 }
+                
+            }else{
+                $error="Erreur de valeur";
+                return $error;
             }
 
 

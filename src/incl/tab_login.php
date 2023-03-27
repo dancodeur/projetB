@@ -15,13 +15,41 @@
                 <div class="">
                       <ul class="flex">
                          <li>
-                            <a href="" class="bg-red-600 text-slate-100 hover:bg-red-500 py-2 px-4 rounded-full">Ouvrir un compte</a>
+                            <a href="nouveau_client.php" class="bg-red-600 text-slate-100 hover:bg-red-500 py-2 px-4 rounded-full">Ouvrir un compte</a>
                          </li>
                       </ul>
                 </div>
             </nav>
 
               <hr class="mt-2 mb-2">
+
+              <?php 
+                  
+                  if(isset($_POST["btn"])){
+                   
+                    $code_client=htmlspecialchars($_POST["code_client"]);
+                    $code_secret=htmlspecialchars($_POST["code_secret"]);
+
+                    $auth=$db->prepare("SELECT * FROM client WHERE client_code=? AND client_code_secret=?");
+                    $auth->execute(array($code_client,$code_secret));
+
+                    if($auth->rowCount()>0){
+                         $id=$auth->fetch()["client_id"];
+                         $_SESSION["id"]=$id;
+
+                         header("location:Comptes.php");
+                         
+                    }else{
+                        ?>
+                        <section class="text-slate-100 bg-red-500 rounded px-2 py-3 text-center">
+                            <p class="text-sm">Aucun compte client ne correspond à vos identifiants</p>
+                        </section>
+                        <?php
+                    }
+                   
+                  }
+              
+              ?>
               
              <div class="mt-[3.8rem] mb-[2.8rem]">
                  <h1 class="text-slate-800 text-md text-left  font-semibold">Connexion à votre espace client</h1>

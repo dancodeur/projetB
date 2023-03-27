@@ -69,7 +69,7 @@ if(isset($_POST['btn'])){
 
 ?>
 
-<section class="w-[80%] m-auto" data-aos="fade-up" data-aos-delay="50"  data-aos-duration="1000"  data-aos-easing="ease-in-out">
+<section class="w-[80%] m-auto">
     <div class="space-y-2 border border-slate-300 rounded w-[60%] bg-slate-100 px-4 py-4 mb-3">
                  
         <!---Formulaire de transaction-->

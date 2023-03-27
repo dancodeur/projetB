@@ -1,7 +1,7 @@
 <header class="px-8 py-4 mb-3 bg-slate-800 items-center ">
     <nav class="grid grid-cols-9">
         <div class="col-span-1">
-              <a href="index.php">
+              <a href="Comptes.php">
                 <h1 class="text-4xl font-semibold text-yellow-300">Bank</h1>
               </a>
         </div>

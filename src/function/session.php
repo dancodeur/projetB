@@ -34,7 +34,7 @@ function destroySession($home=true){
 function VerifAuth(){
 
     if(!isset($_SESSION['id'])){
-        header("location:Connexion.php");
+        header("location:index.php");
     }
 }
 

@@ -43,7 +43,7 @@ if(isset($_POST['btn'])){
 
                         ?>
                           <section class="w-[80%] py-3  m-auto mb-3 bg-green-500 text-slate-50 text-center font-semibold">
-                            <p>Votre Virement a été effectuer avec succès</p>
+                            <p>Le virement a été effectuer avec succès</p>
                           </section>
 
                         <?php
