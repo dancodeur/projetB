@@ -1,4 +1,4 @@
-# Projet B
+# Projet DanBank
 
 ## Description
 Ce projet est une application web de gestion de comptes bancaires permettant aux utilisateurs de consulter leurs comptes, d'effectuer des transactions et de gérer leurs finances en toute simplicité. Hébergée sur Alwaysdata, le code source est disponible sur GitHub.
