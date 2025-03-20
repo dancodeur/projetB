@@ -14,7 +14,7 @@ VerifAuth();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget</title>
     <link href="../dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <?php require_once("incl/Link.php"); ?>
 </head>
 <body>

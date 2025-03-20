@@ -108,7 +108,7 @@
                                                                 #Email 
                                                                 $to=$email;
                                                                 $objet_email="Bank: Activation de compte[".$nom." ".$prenom."]";
-                                                                $message_email="Chers Mr(Mme). $nom $prenom Nous vous souhaitons une chaleureuse bienvenue. Vous faite desormais parti de notre grande famille de client. Votre code client est :" .$COMPTE_NUMBER." ; votre code secret :".$CODE_SECRET." Vous pouvez vous connectez à votre espace client via ce lien de connexion : http://localhost/projetB/src/index.php.";
+                                                                $message_email="Chers Mr(Mme). $nom $prenom Nous vous souhaitons une chaleureuse bienvenue. Vous faite desormais parti de notre grande famille de client. Voici votre code client :" .$COMPTE_NUMBER." ainsi que votre code secret :".$CODE_SECRET.". Authentifiez-vous via ce lien : https://projetb.alwaysdata.net/projetB/src/index.php ,pour acceder à votre espace client.";
                                                        
                                                                  mail($to,$objet_email,$message_email);
 

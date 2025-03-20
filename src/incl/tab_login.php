@@ -1,23 +1,22 @@
 <section class="">
     <div class="grid grid-cols-5 min-h-screen ">
-         <section class="col-span-2 flex justify-center bg-slate-800 rounded-br-[30rem]">
-              <img src="asset/image/sign-up-form.png" alt="svg connexion" style="width:480px; height: 600px;"> 
-              
+         <section class="  col-span-2 md:flex justify-center bg-slate-800 rounded-br-[30rem]">
+              <img src="asset/image/sign-up-form.png" alt="svg connexion" style="width:480px; height: 600px;">        
          </section>
 
          <section class="col-span-3  space-y-4 px-4">
 
             <nav class="flex justify-between mt-[3rem] mb-[0.8rem] border-0 pb-3">
                 <div class="">
-                   <h1 class="text-4xl font-semibold text-slate-800">Bank</h1>
+                   <h1 class="text-4xl font-semibold text-slate-800">DanBank</h1>
                 </div>
 
                 <div class="">
-                      <ul class="flex">
+                      <!-- <ul class="flex">
                          <li>
                             <a href="nouveau_client.php" class="bg-red-600 text-slate-100 hover:bg-red-500 py-2 px-4 rounded-full">Ouvrir un compte</a>
                          </li>
-                      </ul>
+                      </ul> -->
                 </div>
             </nav>
 
@@ -42,7 +41,7 @@
                     }else{
                         ?>
                         <section class="text-slate-100 bg-red-500 rounded px-2 py-3 text-center">
-                            <p class="text-sm">Aucun compte client ne correspond à vos identifiants</p>
+                            <p class="text-sm">Aucun compte client ne correspond aux identifiants saisis.</p>
                         </section>
                         <?php
                     }
@@ -93,7 +92,7 @@
              </div>
 
              <div class="text-center">
-                 <p class="text-slate-600 text-xs">Bank 2023 made by <a href="mailto:elengadan@gmail.com" class="text-red-500">Dan Elenga</a> TD2-TP3 BUT MMI CY Cergy-Paris université - IUT Sarcelles.</p>
+                 <p class="text-slate-600 text-xs">DanBank 2025 made by <a href="mailto:elengadan@gmail.com" class="text-red-500">Dan Elenga</a> CY Cergy-Paris Université</p>
              </div>
 
          </section>

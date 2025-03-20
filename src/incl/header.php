@@ -2,7 +2,7 @@
     <nav class="grid grid-cols-9">
         <div class="col-span-1">
               <a href="Comptes.php">
-                <h1 class="text-4xl font-semibold text-yellow-300">Bank</h1>
+                <h1 class="text-4xl font-semibold text-yellow-300">DanBank</h1>
               </a>
         </div>
         <div class="col-span-3">
